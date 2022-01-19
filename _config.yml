@@ -1,2 +1,6 @@
 theme: jekyll-theme-architect
 title: Shreyansh @GitHub
+collections:
+  topics:
+    meta3: "hello"
+collections_dir: site_collections
