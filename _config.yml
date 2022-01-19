@@ -3,4 +3,5 @@ title: Shreyansh @GitHub
 collections:
   topics:
     meta3: "hello"
+    output: true
 collections_dir: site_collections

@@ -9,7 +9,7 @@ var2: "test value with quotes"
   <a href="{{topic.url}}">{{topic.title}}</a>
   <h2>Meta 1 {{ topic.meta1 }}</h2>
   <h2>Meta 2 {{ topic.meta2 }}</h2>
-  <h2>Meta 3 {{ topic.meta3 }}</h2>
+  <h2>Collection metadata {{ topics.meta3 }}</h2>
   <p>{{ topic.content | markdownify }}</p>
 {% endfor %}
 
@@ -38,3 +38,13 @@ var2: "test value with quotes"
 
 <h2>{{page.var1}}</h2>
 <h2>{{page.var2}}</h2>
+
+# Pages
+
+<ul>
+  {% for page in site.pages %}
+    <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
