@@ -5,11 +5,11 @@ var2: "test value with quotes"
 
 # Topics / Collection
 
+<h2>Collection metadata - {{ site.topics.meta3 }}</h2>
 {% for topic in site.topics %}
   <a href="{{topic.url}}">{{topic.title}}</a>
   <h2>Meta 1 {{ topic.meta1 }}</h2>
   <h2>Meta 2 {{ topic.meta2 }}</h2>
-  <h2>Collection metadata {{ topics.meta3 }}</h2>
   <p>{{ topic.content | markdownify }}</p>
 {% endfor %}
 
